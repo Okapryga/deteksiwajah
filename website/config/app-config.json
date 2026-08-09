@@ -1,0 +1,26 @@
+{
+    "faceApiUrl": "https://vladmandic.github.io/face-api/model/",
+    "modelPath": "../model_keras/model.json",
+    "emotionLabels": [
+        "Marah",
+        "Jijik",
+        "Takut",
+        "Senang",
+        "Sedih",
+        "Terkejut",
+        "Biasa/Netral"
+    ],
+    "inputSize": 48,
+    "messages": {
+        "loadingConfig": "Memuat konfigurasi aplikasi...",
+        "loadingFaceDetector": "Memuat Face Detector...",
+        "loadingModel": "Memuat custom model Keras...",
+        "ready": "Sistem siap. Upload foto atau buka kamera.",
+        "cameraActive": "Kamera aktif. Tekan jepret untuk mengambil foto.",
+        "noFaceDetected": "Wajah tidak terdeteksi pada gambar.",
+        "detectionComplete": "Deteksi selesai. Emosi ditampilkan di atas wajah.",
+        "modelLoadError": "Gagal memuat model. Jalankan lewat Live Server atau GitHub Pages.",
+        "cameraError": "Kamera tidak tersedia atau akses ditolak.",
+        "processing": "Memproses gambar..."
+    }
+}

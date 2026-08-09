@@ -1,0 +1,48 @@
+git <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deteksi Emosi Wajah AI</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <main class="app-card">
+            <section class="hero-panel">
+                <div>
+                    <span class="eyebrow">Aplikasi Deteksi Emosi</span>
+                    <h1>Wajah & Emosi AI</h1>
+                    <p>Upload foto atau gunakan kamera untuk mendeteksi wajah dan emosi secara real-time.</p>
+                </div>
+                <div class="badge">Custom Model Keras + Face API</div>
+            </section>
+
+            <section class="status-panel">
+                <div class="status-badge" id="status-indicator"></div>
+                <p id="status-text">Sedang memuat konfigurasi...</p>
+            </section>
+
+            <section class="controls-panel" id="controls" aria-live="polite">
+                <input type="file" id="file-upload" accept="image/*" hidden>
+                <button id="btn-upload" class="button primary">📁 Upload Foto</button>
+                <button id="btn-start-cam" class="button secondary">📸 Buka Kamera</button>
+                <button id="btn-capture" class="button accent hidden">🔴 Jepret Foto</button>
+            </section>
+
+            <section class="viewer-panel">
+                <div class="media-frame" id="media-container">
+                    <video id="video" autoplay muted playsinline class="media-element hidden"></video>
+                    <img id="image-display" alt="Gambar input deteksi emosi" class="media-element hidden">
+                    <canvas id="overlay" class="media-element"></canvas>
+                </div>
+                <p class="note">Pastikan menjalankan halaman lewat server HTTP/HTTPS (Live Server / GitHub Pages) agar model dapat dimuat dengan benar.</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api/dist/face-api.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
