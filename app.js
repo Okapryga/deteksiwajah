@@ -1,6 +1,6 @@
 class ConfigLoader {
     static async load() {
-        const response = await fetch('config/app-config.json');
+        const response = await fetch('app-config.json');
         if (!response.ok) {
             throw new Error('Gagal memuat konfigurasi JSON');
         }
